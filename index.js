@@ -1,4 +1,7 @@
+ // codigo com objetivo  de fazer video pro youtube automaticamente
+// biblioteca para ler o imput do usuario 
 const readline = require ('readline-sync')
+//inicio da função
 function start() {
     const content = {}
     content.searchTearm = askAndReturnSeachTerm()
@@ -12,7 +15,7 @@ function start() {
          const selectedPrefixIndex = readline.keyInSelect(prefixes, 'choose one option:')
          const selectPrefixText = prefixes[selectedPrefixIndex] 
          
-        //  console.log(selectPrefixText)
+        //  console.log(selectPrefixText) -- descontinuado  na versão
         return selectPrefixText      
     }
     console.log(content)
